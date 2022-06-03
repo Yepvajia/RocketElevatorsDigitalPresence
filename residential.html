@@ -114,29 +114,29 @@
 									
 									Add .external for an external link!
 								-->
-								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage external">
 									<li class="active"><!-- HOME -->
-										<a id="home-nav" class="scrollTo" href="#top">
+										<a id="home-nav" href="index.html">
 											HOME
 										</a>
 									</li>
 									<li><!-- SERVICES -->
-										<a id="services-nav" href="#services">
+										<a id="services-nav" href="index.html#services">
 											SERVICES
 										</a>
 									</li>
 									<li><!-- PORTFOLIO -->
-										<a id="portfolio-nav" href="#portfolio">
+										<a id="portfolio-nav" href="index.html#portfolio">
 											PORTFOLIO
 										</a>
 									</li>
 									<li><!-- NEWS -->
-										<a id="news-nav" href="#news">
+										<a id="news-nav" href="index.html#news">
 											NEWS
 										</a>
 									</li>
 									<li><!-- CLIENTS -->
-										<a id="clients-nav" href="#clients">
+										<a id="clients-nav" href="index.html#clients">
 											CLIENTS
 										</a>
 									</li>
@@ -202,11 +202,11 @@
 							<!-- MAIN IMAGE -->
 							<img src="r_assets/AdobeStock_41696502.jpeg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 							
-							<div class="overlay dark-3"> <!-- dark overlay [0 to 9 opacity] --> </div>
+							<div class="overlay dark-4"> <!-- dark overlay [0 to 9 opacity] --> </div>
 
 							<div class="tp-caption white_big skewfromleft tp-resizeme"
-								data-x="350"
-								data-y="80" 
+								data-x="320"
+								data-y="70" 
 								data-speed="400"
 								data-start="1500"
 								data-easing="Power3.easeInOut"
@@ -220,8 +220,8 @@
 							</div>
 
 							<div class="tp-caption content_text_center skewfromleft tp-resizeme"
-								data-x="530"
-								data-y="195" 
+								data-x="370"
+								data-y="180" 
 								data-speed="500"
 								data-start="2000"
 								data-easing="Power3.easeInOut"
@@ -232,8 +232,12 @@
 								data-endspeed="600"
 
 								style="z-index: 3; font-size:20px; color:#fff; font-weight:300; text-shadow:none;">
-									Join us in building a better, rocket powered, future <br />
-									and reach new heights.
+									We are building the future the no one had ever imagined. The world is<br/>
+									not anymore the way it used to be. No! No! No! The way of the resident<br/>
+									is a way few have mastered.<br/><br/>
+									Our elevators, to put it simply, are built different. Some could even say <br/>
+									they are constructed abnormally on a mollecular level.<br/><br/>
+									You want happiness? Buy our elevators:
 							</div>
 
 							<div class="tp-caption tp-fade"
@@ -246,12 +250,12 @@
 								data-endelementdelay="0.1"
 								data-endspeed="300"
 								style="z-index: 4;">
-									<img src="demo_files/images/thematics/construction/worker-min.png" alt="">
+									<img src="r_assets/worker-min.png" alt="">
 							</div>
 
 							<div class="tp-caption skewfromleft tp-resizeme  un-button-2-lg"
-								data-x="665"
-								data-y="300" 
+								data-x="460"
+								data-y="435" 
 								data-speed="300"
 								data-start="2500"
 								data-easing="Power3.easeInOut"
@@ -302,7 +306,7 @@
 
 					<header class="text-center mb-60">
 						<h2>Contact Us</h2>
-						<p class="lead font-lato">Lorem ipsum dolor sit amet adipiscium elit</p>
+						<p class="lead font-lato">Any unwarranted contact will result in legal action.</p>
 						<hr />
 					</header>
 
@@ -312,7 +316,7 @@
 						<!-- FORM -->
 						<div class="col-md-8 col-sm-8">
 
-							<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
+							<h3>Wanna let us in on the <strong><em>goods? </em></strong></h3>
 
 							
 							<!--
@@ -377,26 +381,34 @@
 												<label for="contact:phone">Phone</label>
 												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
 											</div>
+											<div class="col-md-4">
+												<label for="contact:company_name">Business Name</label>
+												<input type="text" value="" class="form-control" name="contact[company_name]" id="contact:company_name">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:project_name">Project Name *</label>
+												<input type="text" value="" class="form-control" name="contact[project_name][required]" id="contact:project_name">
+											</div>
 									</div>
 									<div class="row">
 											<div class="col-md-8">
-												<label for="contact:subject">Subject *</label>
-												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
+												<label for="contact:project_description">Project Description *</label>
+												<input required type="text" value="" class="form-control" name="contact[project_description][required]" id="contact:project_description">
 											</div>
 											<div class="col-md-4">
-												<label for="contact_department">Department</label>
-												<select class="form-control pointer" name="contact[department]">
+												<label for="contact:department">Department *</label>
+												<select class="form-control pointer" name="contact[department][required]" id="contact:department">
 													<option value="">--- Select ---</option>
-													<option value="Marketing">Marketing</option>
-													<option value="Webdesign">Webdesign</option>
-													<option value="Architecture">Architecture</option>
+													<option value="Support">Support</option>
+													<option value="Residential">Residential</option>
+													<option value="Corporate">Corporate</option>
 												</select>
 											</div>
 									</div>
 									<div class="row">
 											<div class="col-md-12">
 												<label for="contact:message">Message *</label>
-												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
+												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message][required]" id="contact:message"></textarea>
 											</div>
 									</div>
 									<div class="row">
@@ -447,9 +459,9 @@
 							<hr />
 
 							<p>
-								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> Street Name, City Name, Country</span>
-								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-555-1234</a></span>
-								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">mail@yourdomain.com</a></span>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468 Wellington St Suite 204, Verdun, Quebec H4G 1W5</span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:(418) 555-1234">(418) 555-1234</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@codeboxx.biz">info@codeboxx.biz</a></span>
 							</p>
 
 						</div>
@@ -478,9 +490,9 @@
 
 							<!-- Small Description -->
 							<p>
-								Why is the great question we all must ask when our minds finally develop the ability to comprehend its own existence. WHY US?
+								Why is the great question we all must ask when our minds finally develop the ability to comprehend its own existence. WHY US? We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.
 							</p>
-							<h2>1(800) 887-2497</h2>
+							<h2>(418) 555-1234</h2>
 						</div>
 						<!-- /col #1 -->
 
@@ -514,9 +526,9 @@
 				<div class="copyright">
 					<div class="container">
 						<ul class="float-right m-0 list-inline mobile-block">
-							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li><a href="#top">Terms &amp; Conditions</a></li>
 							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
+							<li><a href="#top">Privacy</a></li>
 						</ul>
 						&copy; All Rights Reserved, Rocket Elevators INC.
 					</div>
